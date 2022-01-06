@@ -15,9 +15,9 @@ A simple Portfolio project with about Sediqullah Badakhsh
 
 👤 **Sediqullah Badakhsh**
 
-- GitHub: [@githubhandle](https://github.com/sediqullahbadakhsh)
-- Twitter: [@twitterhandle](https://twitter.com/sediqullah6)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/sediqullahbadakhsh)
+- GitHub: [@Badakhsh](https://github.com/sediqullahbadakhsh)
+- Twitter: [@Badakhsh](https://twitter.com/sediqullah6)
+- LinkedIn: [@Badakhsh](https://linkedin.com/in/sediqullah-badakhsh-999053a8)
 
 ## Show your support
 

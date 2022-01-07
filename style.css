@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: black;
   color: white;
 }
 
@@ -37,6 +36,10 @@ ul li a {
   font-weight: 300;
 }
 
+.humberger-menu {
+  display: none;
+}
+
 a:hover {
   color: #f55800;
 }
@@ -46,18 +49,18 @@ i {
 }
 
 .landing {
+  background-color: black;
   height: 100vh;
   display: flex;
-  flex: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .about-us {
   display: flex;
-  width: 50%;
   padding: 20px;
   margin-left: 20px;
+  justify-content: center;
 }
 
 .social-icon {
@@ -69,13 +72,14 @@ i {
   padding-right: 20px;
 }
 
-.social-icon ul {
+.landing ul {
   list-style-type: none;
   margin-right: 20px;
 }
 
 .landing-image {
   max-width: 860px;
+  display: flex;
 }
 
 .intro h1 {
@@ -87,10 +91,40 @@ i {
 
 .intro h2,
 p {
-  padding: 20px 0;
+  padding: 10px 0;
   line-height: 30px;
 }
 
 p {
   font-size: 20px;
+}
+
+@media all and (max-width: 900px) {
+  .landing {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .humberger-menu {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .landing-image {
+    width: 100%;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .social-icon ul {
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 20px;
+  }
 }

@@ -1,3 +1,130 @@
-h1 {
-  color: blue;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+header {
+  height: 72px;
+  background: #3e3c3c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header .logo {
+  height: 65px;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 20px;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.humberger-menu {
+  display: none;
+}
+
+a:hover {
+  color: #f55800;
+}
+
+i {
+  color: white;
+}
+
+.landing {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us {
+  display: flex;
+  padding: 20px;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+  padding-right: 20px;
+}
+
+.landing ul {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.landing-image {
+  max-width: 860px;
+  display: flex;
+}
+
+.intro h1 {
+  color: #f55800;
+  text-transform: uppercase;
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.intro h2,
+p {
+  padding: 10px 0;
+  line-height: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+@media all and (max-width: 900px) {
+  .landing {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .humberger-menu {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .landing-image {
+    width: 100%;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .social-icon ul {
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 20px;
+  }
 }

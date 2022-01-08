@@ -141,18 +141,24 @@ p {
   padding-top: 100px;
   color: #1c1a19;
   padding-bottom: 120px;
-  margin: 10px;
+  margin: 20px;
 }
 
-hr {
-  width: 330px;
-  border-color: black;
+.recent-works h3 {
+  margin-top: 207px;
+  border-bottom: black 3px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  height: 83px;
+  margin-bottom: 20px;
 }
 
 .recent-works img {
-  padding-top: 70px;
-  width: 327px;
-  height: 237px;
+  margin: 24px 0;
+  width: 527px;
+  height: 307px;
 }
 
 .recent-works h4 {
@@ -167,7 +173,6 @@ hr {
 
 .recent-works p {
   text-align: left;
-  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -176,9 +181,10 @@ hr {
 
 .tech-used {
   display: flex;
-  width: 250px;
+  width: 297px;
+  height: 40px;
   justify-content: space-between;
-  padding: 0;
+  margin: 12px 0;
 }
 
 .recent-works li {
@@ -190,8 +196,9 @@ hr {
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
-  padding: 10px;
   margin: 0 12px 0 0;
+  box-sizing: border-box;
+  padding: 10px 12px;
 }
 
 button {
@@ -203,6 +210,7 @@ button {
   font-size: 17px;
   line-height: 24px;
   border: none;
+  border: 1px solid #8993a4;
 }
 
 button:hover {
@@ -282,13 +290,11 @@ button:active {
 }
 
 .about-text > h2 {
-  margin: 0;
-  font-family: Crete Round, sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  margin: 0 24px;
   font-size: 72px;
   line-height: 88px;
   color: #ff6b00;
+  letter-spacing: 0.37px;
 }
 
 .about-text > p {
@@ -298,11 +304,13 @@ button:active {
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
+  margin: 0 24px;
 }
 
 .about-text > button {
   width: 161px;
   height: 48px;
+  margin: 0 24px;
 }
 
 .about-text > hr {
@@ -335,7 +343,6 @@ button:active {
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
-  line-height: 44px;
   list-style-image: url("./image/Rectangle_bullet.png");
   list-style-position: inside;
 }
@@ -366,5 +373,5 @@ button:active {
   font-weight: normal;
   font-size: 22px;
   line-height: 43px;
-  list-style-type: none;
+  list-style: none;
 }

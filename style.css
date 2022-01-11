@@ -31,7 +31,7 @@ header a {
 
 ul li a {
   text-decoration: none;
-  padding: 0 20px;
+  padding: 0 8px;
   display: inline-block;
   color: white;
   font-size: 20px;
@@ -374,4 +374,25 @@ button:active {
   font-size: 22px;
   line-height: 43px;
   list-style: none;
+}
+
+.contact-me {
+  color: #172b4d;
+}
+
+.footer .social-icon ul li {
+  list-style-type: none;
+}
+
+.footer i {
+  color: #505f79;
+}
+
+.shape {
+  margin: 21px;
+  width: 134px;
+  height: 5px;
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
 }

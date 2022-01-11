@@ -372,8 +372,67 @@ button:active {
 }
 
 .contact-me {
+    display: flex;
     color: #172b4d;
+    flex-direction:column;
+    padding: 24px;
+
 }
+
+.contact-me p {
+        
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;    
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;    
+    flex-direction:column;
+    gap: 20px;
+    padding: 8px;
+    /* align-items: center; */
+}
+
+input{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    height: 48px;
+    border-style: none;
+    border-bottom-style: solid;
+    padding-left: 10px;  
+
+}
+
+textarea {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    border-style: none;    
+    padding-left: 10px;   
+    height: 114px;
+    background: #FBF8F7;
+}
+
+button {
+    padding: 12px;
+    width: 131px;
+    height: 48px;    
+    align-self: center;    
+    margin-bottom: 100px;
+    border: #fff5e1;
+}
+
 
 .footer .social-icon ul li {
     list-style-type: none;

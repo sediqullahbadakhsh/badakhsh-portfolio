@@ -24,7 +24,7 @@ header {
   list-style-type: none;
 }
 
-.desktop-nav {
+.navbar .desktop-nav {
   display: none;
 }
 

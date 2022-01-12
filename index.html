@@ -193,9 +193,9 @@
         <section class="contact-me">
             <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
             <form action="https://formspree.io/f/moqrjalz" method="post">
-                <input name="fullname" type="text" placeholder="Full name" required>
+                <input name="fullname" type="text" placeholder="Full name" minlength="5" maxlength="50" required>
                 <input name="email" type="email" placeholder="Email address" required>
-                <textarea name="message" type="text" required>Enter text here</textarea>
+                <textarea name="message" type="text" minlength="5" maxlength="500" required>Enter text here</textarea>
                 <button type="submit">Get in touch</button>
             </form>
         </section>

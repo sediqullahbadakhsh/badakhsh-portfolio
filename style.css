@@ -416,6 +416,7 @@ input {
   line-height: 24px;
   height: 48px;
   border-style: none;
+  border-color: #dbd8d7;
   border-bottom-style: solid;
   padding-left: 10px;
 }

@@ -10,16 +10,22 @@ body {
 }
 
 header {
-  height: 72px;
+  height: 48px;
   background: #3e3c3c;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 0 24px;
 }
 
 .navbar ul {
   display: flex;
   list-style-type: none;
+}
+
+.navbar .desktop-nav {
+  display: none;
 }
 
 header a {
@@ -32,14 +38,17 @@ header a {
 ul li a {
   text-decoration: none;
   padding: 0 8px;
-  display: inline-block;
   color: white;
   font-size: 20px;
   font-weight: 300;
+  display: flex;
+  align-items: center;
+  height: 40px;
 }
 
-.humberger-menu {
-  display: none;
+.humberger-menu a {
+  width: 12px;
+  height: 18px;
 }
 
 a:hover {
@@ -51,27 +60,25 @@ i {
 }
 
 .landing {
-  background-color: black;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.about-us {
-  display: flex;
-  padding: 20px;
-  margin-left: 20px;
-  justify-content: center;
-}
-
-.social-icon {
+  position: relative;
+  background-color: #1c1a19;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  line-height: 30px;
-  padding-right: 20px;
+  padding: 120px 24px;
+  overflow: hidden;
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-image: url("./image/Illustration-header@2x.png");
+  background-repeat: no-repeat;
+  background-position-x: 331px;
+  background-position-y: 322px;
+  background-size: 200px;
+  transform: rotate(351deg);
 }
 
 .landing ul {
@@ -79,73 +86,46 @@ i {
   margin-right: 20px;
 }
 
-.landing-image {
-  max-width: 860px;
+.landing .social-icon ul {
   display: flex;
+  width: 40px;
+  padding: 0;
 }
 
 .intro h1 {
-  color: #f55800;
+  font-family: 'crete round', serif;
+  color: #ff6b00;
   text-transform: uppercase;
-  font-size: 40px;
   padding: 10px 0;
+  line-height: 64px;
+  font-size: 56px;
 }
 
-.intro h2,
-p {
-  padding: 10px 0;
-  line-height: 30px;
+.intro h2 {
+  font-family: 'roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
 }
 
-p {
-  font-size: 20px;
-}
-
-@media all and (max-width: 900px) {
-  .landing {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .humberger-menu {
-    display: block;
-  }
-
-  .navbar ul {
-    display: none;
-  }
-
-  .landing-image {
-    width: 100%;
-  }
-
-  .about-us {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .social-icon ul {
-    display: flex;
-    flex-direction: row !important;
-    margin-top: 20px;
-  }
+.intro p {
+  font-family: 'poppins', sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .recent-works {
-  font-family: Crete Round, sans-serif;
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 30px;
-  line-height: 52px;
-  text-align: center;
-  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
   color: #1c1a19;
-  padding-bottom: 120px;
-  margin: 20px;
+  padding: 120px 24px;
 }
 
 .recent-works h3 {
-  margin-top: 207px;
+  text-align: center;
   border-bottom: black 3px;
   font-style: normal;
   font-weight: normal;
@@ -156,16 +136,16 @@ p {
 }
 
 .recent-works img {
-  margin: 24px 0;
-  width: 527px;
-  height: 307px;
+  margin-top: 80px;
+  margin-bottom: 24px;
+  width: 100%;
 }
 
 .recent-works h4 {
   text-align: left;
   font-family: Crete Round, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
@@ -174,17 +154,17 @@ p {
 .recent-works p {
   text-align: left;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: #091e42;
+  margin-bottom: 12px;
 }
 
 .tech-used {
   display: flex;
-  width: 297px;
   height: 40px;
-  justify-content: space-between;
-  margin: 12px 0;
+  margin-bottom: 12px;
 }
 
 .recent-works li {
@@ -202,15 +182,12 @@ p {
 }
 
 button {
-  background-color: #f55b00;
-  color: white;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   border: none;
-  border: 1px solid #8993a4;
 }
 
 form button {
@@ -218,17 +195,22 @@ form button {
   width: 131px;
   height: 48px;
   align-self: center;
-  margin-bottom: 100px;
+}
+
+button:enabled {
+  color: #fff;
+  background-color: #f55800;
 }
 
 button:hover {
   background-color: #fff5e1;
   border: 1px solid #f55b00;
-  color: #f55b00;
+  color: #f55800;
 }
 
 button:active {
   background-color: #e05304;
+  border: 1px solid #f55b00;
   color: #f4f1f0;
 }
 
@@ -250,12 +232,13 @@ button:active {
   height: 386px;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(./image/Img_Placeholder_2.png);
   padding: 0 16px;
+  padding-top: 84px;
 }
 
 .card-content > h4 {
   font-family: Crete Round, sans-serif;
   font-style: normal;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 32px;
   line-height: 44px;
   color: white;
@@ -265,22 +248,23 @@ button:active {
 .card-content > p {
   font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  margin-top: 12px;
   color: white;
 }
 
-.card-content > ul {
+.work-card .card-content > ul {
   display: flex;
-  width: 230px;
+  width: 370px;
   justify-content: space-between;
   padding: 0;
 }
 
 .card-content li {
   color: white;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.096);
   border: none;
 }
 
@@ -289,7 +273,7 @@ button:active {
 }
 
 .about-me {
-  padding-top: 110px;
+  padding: 120px 24px;
   background-color: #1c1a19;
   background-image: url(./image/About-me_background_image.png);
   background-repeat: no-repeat;
@@ -298,7 +282,6 @@ button:active {
 }
 
 .about-text > h2 {
-  margin: 0 24px;
   font-size: 72px;
   line-height: 88px;
   color: #ff6b00;
@@ -312,13 +295,12 @@ button:active {
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
-  margin: 0 24px;
+  margin: 24px 0;
 }
 
 .about-text > button {
   width: 161px;
   height: 48px;
-  margin: 0 24px;
 }
 
 .about-text > hr {
@@ -329,13 +311,13 @@ button:active {
   border-color: white;
 }
 
-.skill-set {
+.about-me .skill-set {
   padding-top: 100px;
   color: white;
   text-align: center;
 }
 
-.skill-set ul {
+.about-me .skill-set ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -343,7 +325,7 @@ button:active {
 }
 
 .skill-set li {
-  padding: 17px 0;
+  padding: 10px 0;
 }
 
 .languages {
@@ -351,6 +333,7 @@ button:active {
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
+  line-height: 44px;
   list-style-image: url("./image/Rectangle_bullet.png");
   list-style-position: inside;
 }
@@ -388,7 +371,7 @@ button:active {
   display: flex;
   color: #172b4d;
   flex-direction: column;
-  padding: 24px;
+  padding: 120px 24px;
 }
 
 .contact-me h6 {
@@ -397,7 +380,6 @@ button:active {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  margin-top: 100px;
   margin-bottom: 50px;
 }
 
@@ -432,6 +414,16 @@ textarea {
   background: #fbf8f7;
 }
 
+footer {
+  border-top: solid 1px #dfe1e6;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .social-icon ul {
+  display: flex;
+}
+
 .footer .social-icon ul li {
   list-style-type: none;
 }
@@ -447,4 +439,5 @@ textarea {
   bottom: 8px;
   background: #0d151e;
   border-radius: 12px;
+  align-self: center;
 }

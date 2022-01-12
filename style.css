@@ -213,6 +213,14 @@ button {
   border: 1px solid #8993a4;
 }
 
+form button {
+  padding: 12px;
+  width: 131px;
+  height: 48px;
+  align-self: center;
+  margin-bottom: 100px;
+}
+
 button:hover {
   background-color: #fff5e1;
   border: 1px solid #f55b00;
@@ -377,7 +385,51 @@ button:active {
 }
 
 .contact-me {
+  display: flex;
   color: #172b4d;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.contact-me h6 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 8px;
+
+  /* align-items: center; */
+}
+
+input {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  height: 48px;
+  border-style: none;
+  border-color: #dbd8d7;
+  border-bottom-style: solid;
+  padding-left: 10px;
+}
+
+textarea {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  border-style: none;
+  padding-left: 10px;
+  height: 114px;
+  background: #fbf8f7;
 }
 
 .footer .social-icon ul li {
@@ -394,5 +446,5 @@ button:active {
   height: 5px;
   bottom: 8px;
   background: #0d151e;
-  border-radius: 10px;
+  border-radius: 12px;
 }

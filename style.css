@@ -18,7 +18,6 @@ body {
   color: white;
 }
 
-
 /***  Header Navbar Section  ***/
 
 header {
@@ -71,9 +70,7 @@ i {
   color: white;
 }
 
-
 /**  end of Header and Navbar Section  ***/
-
 
 /***  Landing section  ***/
 
@@ -135,9 +132,7 @@ i {
   font-weight: normal;
 }
 
-
 /**  end of Lading Section  ***/
-
 
 /***  Recent work section  ***/
 
@@ -214,7 +209,6 @@ button {
   border: none;
 }
 
-
 /***  form Button  ***/
 
 form button {
@@ -223,7 +217,6 @@ form button {
   height: 48px;
   align-self: center;
 }
-
 
 /****   */
 
@@ -250,9 +243,7 @@ button:active {
   float: left;
 }
 
-
 /***  end of Recent work section  ***/
-
 
 /***  Card Section  ***/
 
@@ -308,9 +299,7 @@ button:active {
   width: 100%;
 }
 
-
 /***  End of Card section  ***/
-
 
 /***  about me section  ***/
 
@@ -408,7 +397,6 @@ button:active {
   line-height: 43px;
   list-style: none;
 }
-
 
 /***  Contact us  ***/
 

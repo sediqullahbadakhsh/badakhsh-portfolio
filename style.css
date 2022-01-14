@@ -429,10 +429,6 @@ button:active {
   line-height: 44px;
   text-align: center;
   margin-bottom: 50px;
-  transition:transform 0.2s ease 1s;
-}
-.contact-me h6:hover{
-  transform: translate(10x 0);
 }
 
 form {
@@ -735,6 +731,12 @@ footer {
     font-size: 40px;
     font-weight: 700;
     font-style: normal;
+  }
+
+  #text:hover {
+    transition: 0.2s ease;
+    transition-duration: 1s;
+    transform: translate(10px);
   }
 
   .contact-me form {

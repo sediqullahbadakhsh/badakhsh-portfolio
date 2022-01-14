@@ -30,6 +30,21 @@ header {
   padding: 0 24px;
 }
 
+.logo:hover {
+  text-decoration: none;
+  animation: z1 1s linear;
+}
+
+@keyframes z1 {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.3);
+  }
+}
+
 .navbar ul {
   display: flex;
   list-style-type: none;

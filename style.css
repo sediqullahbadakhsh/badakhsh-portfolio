@@ -414,6 +414,10 @@ button:active {
   line-height: 44px;
   text-align: center;
   margin-bottom: 50px;
+  transition:transform 0.2s ease 1s;
+}
+.contact-me h6:hover{
+  transform: translate(10x 0);
 }
 
 form {

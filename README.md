@@ -13,6 +13,10 @@ In this Project, I used HTML and CSS (Media, Transition, flexbox, Grid and more)
 - CSS
 
 
+## Live Demo
+
+- [Badakhsh-Portfolio](https://sediqullahbadakhsh.github.io/badakhsh-portfolio/).
+
 
 ## Authors
 

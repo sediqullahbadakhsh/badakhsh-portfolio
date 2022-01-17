@@ -26,7 +26,7 @@ In this Project, I used HTML and CSS (Media, Transition, flexbox, Grid and more)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [Portfolio](https://github.com/sediqullahbadakhsh/badakhsh-portfolio).
+Feel free to check the [Portfolio](https://sediqullahbadakhsh.github.io/badakhsh-portfolio/).
 
 ## Show your support
 

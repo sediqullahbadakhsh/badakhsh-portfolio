@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
 }
 
@@ -28,6 +28,9 @@ header {
   align-items: center;
   width: 100%;
   padding: 0 24px;
+}
+span {
+  display: none;
 }
 
 .logo:hover {
@@ -92,6 +95,7 @@ i {
 .landing {
   position: relative;
   background-color: #1c1a19;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   padding: 120px 24px;
@@ -103,6 +107,7 @@ i {
   position: absolute;
   width: 200%;
   height: 200%;
+  z-index: -1;
   background-image: url("./image/Illustration-header@2x.png");
   background-repeat: no-repeat;
   background-position: 52% 32%;
@@ -122,7 +127,7 @@ i {
 }
 
 .intro h1 {
-  font-family: 'crete round', serif;
+  font-family: "crete round", serif;
   font-style: normal;
   font-weight: 400;
   color: #ff6b00;
@@ -132,7 +137,7 @@ i {
 }
 
 .intro h2 {
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -140,7 +145,7 @@ i {
 }
 
 .intro p {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   line-height: 24px;
   font-size: 16px;
   font-style: normal;
@@ -272,7 +277,12 @@ button:active {
 
 .card-content {
   height: 386px;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(./image/Img_Placeholder_2.png);
+  background: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url(./image/Img_Placeholder_2.png);
   padding: 0 16px;
   padding-top: 84px;
 }

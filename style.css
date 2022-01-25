@@ -21,7 +21,7 @@ body {
 /***  Header Navbar Section  ***/
 
 header {
-  position:relative;
+  position: relative;
   height: 48px;
   background: #3e3c3c;
   display: flex;
@@ -45,74 +45,68 @@ header {
     transform: scale(1.3);
   }
 }
+
 .navbar {
   display: flex;
 }
-.humberger-menu{
+
+.humberger-menu {
   cursor: pointer;
+  z-index: 10001;
 }
-.humberger-menu div{
+
+.humberger-menu div {
   width: 25px;
-  height:4px;
+  height: 4px;
   background-color: #f4f5f7;
-  margin:4px;
+  margin: 4px;
   transition: all 0.3s ease;
-
 }
 
-.toggle .line1{
-  transform:rotate(-45deg) translate(-5px, 6px);
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2{
-  opacity:0;
+
+.toggle .line2 {
+  opacity: 0;
 }
-.toggle .line3{
-  transform:rotate(45deg) translate(-5px,-6px);
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
+
 .navbar ul {
   list-style-type: none;
 }
-.primary-navigation{
-  position:absolute;
-  display:flex;
+
+.primary-navigation {
+  position: fixed;
+  display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 1000;
-  right:0px;
-  height: 93vh;
-  top:48px;
+  right: 0;
+  height: 100vh;
+  top: 48px;
   background-color: #3e3c3c;
-  width:100%;
-  padding:0 24px;
-  transform:translateX(100%);
+  width: 100%;
+  padding: 0 24px;
+  transform: translateX(100%);
   transition: transform 0.5s ease-in;
 }
 
-.nav-active{
-  transform:translateX(0%);
- 
+.nav-active {
+  transform: translateX(0%) translateY(-48px);
+  height: 100vh;
+  padding-top: 48px;
 }
-.primary-navigation li{
-  width:100%;
-  border-bottom: solid 1px #FFF5E1;
+
+.primary-navigation li {
+  width: 100%;
+  border-bottom: solid 1px #fff5e1;
   padding: 0 24px;
   text-align: left;
-  /* opacity: 0; */
-  
 }
-.primary-navigation li a{
-  font-size:32px;
-  font-weight: 700;
-  text-align: left;
-  color:#FFF5E1;
-  padding:36px 0;
-
-}
-.primary-navigation .envelope{
-  display:none;
-}
-
-
 
 header a {
   color: #fff;
@@ -132,10 +126,20 @@ ul li a {
   height: 40px;
 }
 
-
-
 a:hover {
   color: #f55800;
+}
+
+.primary-navigation li a {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff5e1;
+  padding: 36px 0;
+}
+
+.primary-navigation .envelope {
+  display: none;
 }
 
 i {
@@ -331,7 +335,8 @@ button:active {
 
 .card-content {
   height: 386px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -596,37 +601,40 @@ footer {
 
 @media screen and (min-width: 992px) {
   header {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
     padding: 0 148px;
     height: 48px;
     align-items: center;
   }
-  .primary-navigation{
+
+  .primary-navigation {
     position: static;
-flex-direction: row;
-    transform:translateX(0%);
+    flex-direction: row;
+    transform: translateX(0%);
     height: 48px;
-    padding:0;
+    padding: 0;
   }
-  .primary-navigation li{
-    opacity:10;
-    border:none;
-    padding:0 1rem;
-    }
-  .primary-navigation .envelope{
-    display:inline;
+
+  .primary-navigation li {
+    opacity: 10;
+    border: none;
+    padding: 0 1rem;
   }
-  .primary-navigation li a{
-    font-size:18px;
+
+  .primary-navigation .envelope {
+    display: inline;
+  }
+
+  .primary-navigation li a {
+    font-size: 18px;
     font-weight: 400;
   }
 
   .navbar .humberger-menu {
     display: none;
-      }
+  }
 
   .navbar .primary-navigation {
     display: inline-block;

@@ -25,12 +25,8 @@ header {
   background: #3e3c3c;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
-  padding: 0 24px;
-}
-span {
-  display: none;
+  padding: 0;
 }
 
 .logo:hover {
@@ -47,14 +43,11 @@ span {
     transform: scale(1.3);
   }
 }
-
-.navbar ul {
+.navbar {
   display: flex;
-  list-style-type: none;
 }
-
-.navbar .desktop-nav {
-  display: none;
+.navbar ul {
+  list-style-type: none;
 }
 
 header a {
@@ -544,13 +537,15 @@ footer {
 @media screen and (min-width: 992px) {
   header {
     padding: 0 140px;
+    height: 48px;
+    align-items: center;
   }
 
   .navbar .humberger-menu {
     display: none;
   }
 
-  .navbar .desktop-nav {
+  .navbar .primary-navigation {
     display: inline-block;
     display: flex;
   }

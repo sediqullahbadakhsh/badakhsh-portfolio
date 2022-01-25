@@ -45,22 +45,25 @@
       <div class="logo">
         <a href="#">Badakhsh</a>
       </div>
-      <div>
-        <button class="mobile-nav-toggle" area-controls="primary-navigation" aria-expanded="false"></button>
-          <img class="humberger-menu" src="./image/hamberger-icon.png" alt="Mobile menue" />
-        </button>
-      </div>
-      <div class="navbar">
-        
-        <ul class="primary-navigation" id="primary-navigation">
+      
+      <nav class="navbar">
+         <!-- <ul class="primary-navigation" data-visible="false" id="primary-navigation"> -->
+          <ul class="primary-navigation" id="primary-navigation">
+
           <li><a href="#recent-works ">Portfolio</a></li>
           <li><a href="#about-me ">About</a></li>
-          <li><a href="#contact-me ">Contact Us</a></li>
-          <li>
+          <li><a href="#contact-me ">Contact</a></li>
+          <li class="envelope">
             <a href="# "><i class="fas fa-envelope"></i></a>
           </li>
         </ul>
-      </div>
+        <div class="humberger-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+       
+              </nav>
     </header>
     <main>
       <section class="landing">
@@ -335,7 +338,7 @@ Enter text here</textarea
         </div>
       </footer>
     </main>
-    <div class="second"></div>
+    <script src="app.js"></script>
     <script
       src="https://kit.fontawesome.com/3d2d618d62.js"
       crossorigin="anonymous"

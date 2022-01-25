@@ -1,22 +1,19 @@
 # Badakhsh Portfolio
 
 > First Web project at Microvers.
-![screenshot](./image/screenshot.png)
-
+> ![screenshot](./image/screenshot.png)
 
 In this Project, I used HTML and CSS (Media, Transition, flexbox, Grid and more) on developing one of Microverse Templates
-
 
 ## Built With
 
 - HTML
 - CSS
-
+- JavaScript
 
 ## Live Demo
 
 - [Badakhsh-Portfolio](https://sediqullahbadakhsh.github.io/badakhsh-portfolio/).
-
 
 ## Authors
 

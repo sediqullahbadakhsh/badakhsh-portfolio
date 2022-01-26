@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -14,7 +15,6 @@
       gtag("js", new Date());
       gtag("config", "G-YJ2WSX508J");
     </script>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="badakhsh portfolio, portfolio" />
     <link
@@ -45,21 +45,22 @@
       <div class="logo">
         <a href="#">Badakhsh</a>
       </div>
-      <div class="navbar">
-        <div class="humberger-menu">
-          <button class="mobile-nav-toggle" area-controls="primary-navigation" aria-expanded="false"></button>
-            <img src="./image/hamberger-icon.png" alt="Mobile menue" />
-          </button>
-        </div>
-        <ul class="desktop-nav" id="primary-navigation">
-          <li><a href="#recent-works ">Portfolio</a></li>
-          <li><a href="#about-me ">About</a></li>
-          <li><a href="#contact-me ">Contact Us</a></li>
-          <li>
+
+      <nav class="navbar">
+        <ul class="primary-navigation" id="primary-navigation">
+          <li><a href="#recent-works " class="nav-link">Portfolio</a></li>
+          <li><a href="#about-me " class="nav-link">About</a></li>
+          <li><a href="#contact-me " class="nav-link">Contact</a></li>
+          <li class="envelope">
             <a href="# "><i class="fas fa-envelope"></i></a>
           </li>
         </ul>
-      </div>
+        <div class="humberger-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="landing">
@@ -334,7 +335,7 @@ Enter text here</textarea
         </div>
       </footer>
     </main>
-    <div class="second"></div>
+    <script src="app.js"></script>
     <script
       src="https://kit.fontawesome.com/3d2d618d62.js"
       crossorigin="anonymous"

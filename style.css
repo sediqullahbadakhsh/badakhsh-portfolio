@@ -556,8 +556,73 @@ footer {
   border-radius: 12px;
   align-self: center;
 }
+/* Mobile Modal*/
+.modal-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  padding: 45px 10px 30px 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s opacity 0.5s;
+  z-index: 99999;
+}
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal {
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.modal h3 {
+  padding-top: 10px;
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+}
+.modal .close-btn {
+  position: fixed;
+  top: 10%;
+  left: 90%;
+}
+.modal p {
+  padding-top: 10px;
+  font-size: 16px;
+}
+.modal .modal-btn {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 10px;
+}
+.modal-btn button {
+  font-size: 18px;
+  padding: 12px;
+}
+.modal .multi-image {
+  width: 100%;
+}
+#tech-used {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 17px;
+}
+#tech-used .item {
+  border: solid 2px gray;
+  padding: 5px;
+}
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 600px) and (max-width: 991px) {
   header {
     height: 48px;
     background: #3e3c3c;
@@ -595,6 +660,44 @@ footer {
 
   .about-me .hr {
     padding-top: 100px;
+  }
+  .modal-section {
+    padding: 30px;
+  }
+  .modal {
+    padding: 15px;
+  }
+  .modal h3 {
+    padding-top: 5px;
+    font-size: 2.8rem;
+    padding-bottom: 20px;
+  }
+  .modal .close-btn {
+    left: 85%;
+  }
+  .modal-details {
+    display: flex;
+    gap: 40px;
+  }
+  .modal p {
+    width: 60%;
+  }
+  .modal .modal-btn {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: -20px;
+    gap: 10px;
+  }
+  .modal-btn button {
+    font-size: 18px;
+    padding: 12px;
+  }
+  .modal .multi-image {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
   }
 }
 
@@ -850,69 +953,3 @@ footer {
     display: none;
   }
 }
-
-.modal-section {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100vh;
-  width: 100%;
-  backdrop-filter: blur(10px);
-  z-index: 99999;
-  padding: 45px 10px 30px 10px;
-  opacity: 1;
-}
-.modal-active {
-  opacity: 1;
-}
-.modal {
-  background-color: #fff;
-  color: black;
-  height: 100%;
-  padding: 10px;
-}
-.modal h3 {
-  padding-top: 10px;
-  font-size: 1.8rem;
-  padding-bottom: 40px;
-}
-.modal .close-btn {
-  position: fixed;
-  top: 10%;
-  left: 90%;
-}
-.modal p {
-  padding-top: 10px;
-  font-size: 16px;
-}
-.modal .modal-btn {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding-top: 10px;
-}
-.modal-btn button {
-  font-size: 18px;
-  padding: 12px;
-}
-.modal .multi-image {
-  width: 100%;
-}
-#tech-used {
-  display: flex;
-  list-style: none;
-  gap: 10px;
-  font-size: 16px;
-  font-weight: 500;
-  padding-bottom: 25px;
-}
-#tech-used .item {
-  border: solid 2px gray;
-  padding: 5px;
-}
-
-/* .modal .close-btn {
-  position: fixed;
-  transform: translate(10% 10%);
-} */

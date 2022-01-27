@@ -15,3 +15,13 @@ const navSlide = () => {
 };
 
 navSlide();
+const modalBtn = document.querySelector(".project-button");
+const modalBg = document.querySelector(".modal-section");
+const modalClose = document.querySelector(".close-btn");
+
+modalBtn.addEventListener("click", function () {
+  modalBg.classList.add("modal-active");
+});
+modalClose.addEventListener("click", function () {
+  modalBg.classList.remove("modal-active");
+});

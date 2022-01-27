@@ -635,6 +635,10 @@ footer {
   padding: 5px;
 }
 
+.modal-icon {
+  padding-left: 15px;
+}
+
 @media screen and (min-width: 600px) and (max-width: 991px) {
   header {
     height: 48px;

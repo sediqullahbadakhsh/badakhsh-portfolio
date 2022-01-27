@@ -153,7 +153,7 @@ i {
 .landing {
   position: relative;
   background-color: #1c1a19;
-  z-index: 1;
+  /* z-index: ; */
   display: flex;
   flex-direction: column;
   padding: 120px 24px;
@@ -335,8 +335,7 @@ button:active {
 
 .card-content {
   height: 386px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -851,3 +850,69 @@ footer {
     display: none;
   }
 }
+
+.modal-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  z-index: 99999;
+  padding: 45px 10px 30px 10px;
+  opacity: 1;
+}
+.modal-active {
+  opacity: 1;
+}
+.modal {
+  background-color: #fff;
+  color: black;
+  height: 100%;
+  padding: 10px;
+}
+.modal h3 {
+  padding-top: 10px;
+  font-size: 1.8rem;
+  padding-bottom: 40px;
+}
+.modal .close-btn {
+  position: fixed;
+  top: 10%;
+  left: 90%;
+}
+.modal p {
+  padding-top: 10px;
+  font-size: 16px;
+}
+.modal .modal-btn {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 10px;
+}
+.modal-btn button {
+  font-size: 18px;
+  padding: 12px;
+}
+.modal .multi-image {
+  width: 100%;
+}
+#tech-used {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+#tech-used .item {
+  border: solid 2px gray;
+  padding: 5px;
+}
+
+/* .modal .close-btn {
+  position: fixed;
+  transform: translate(10% 10%);
+} */

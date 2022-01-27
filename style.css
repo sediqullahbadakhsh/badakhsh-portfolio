@@ -952,4 +952,41 @@ footer {
   .shape {
     display: none;
   }
+
+  .modal-section {
+    padding: 60px 80px;
+  }
+  .modal {
+    padding: 20px;
+    border: solid 4px #FF6B00;
+  }
+  .modal .close-btn {
+    position: fixed;
+    top: 12%;
+    left: 90%;
+  }
+  .modal h3 {
+    padding-top: 10px;
+    font-size: 2.8rem;
+    padding-bottom: 10px;
+  }
+  .modal-content {
+    display: flex;
+    gap: 15px;
+  }
+  .modal p {
+    font-size: 20px;
+  }
+  .modal .modal-btn {
+    justify-content: flex-start;
+    gap: 10px;
+    padding-top: 50px;
+  }
+  .modal .multi-image {
+    width: 45%;
+    height: auto;
+  }
+  .modal-details {
+    width: 45%;
+  }
 }

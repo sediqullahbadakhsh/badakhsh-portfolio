@@ -1140,12 +1140,15 @@ footer {
   }
 
   .modal .multi-image {
-    width: 45%;
+    width: 60%;
     height: auto;
   }
 
   .modal-details {
-    width: 45%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .popup {

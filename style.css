@@ -744,6 +744,20 @@ footer {
   padding: 6px;
 }
 
+/* Validate contact form */
+
+.wrong-email {
+  font-size: large;
+  color: #f55800;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.deactive-error {
+  display: none;
+}
+
 @media screen and (min-width: 600px) and (max-width: 991px) {
   header {
     height: 48px;
@@ -1158,5 +1172,11 @@ footer {
   .new-project-img {
     width: 38rem;
     grid-area: a;
+  }
+
+  /* Validate contact form */
+
+  .wrong-email {
+    text-align: left;
   }
 }

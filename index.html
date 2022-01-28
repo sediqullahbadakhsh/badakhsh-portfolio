@@ -283,6 +283,7 @@
         <form action="https://formspree.io/f/moqrjalz" method="post">
           <input
             name="fullname"
+            id="fullname"
             type="text"
             placeholder="Full name"
             minlength="5"
@@ -292,6 +293,7 @@
           />
           <input
             name="email"
+            id="email"
             type="email"
             placeholder="Email address"
             aria-label=" Email Address"
@@ -299,14 +301,15 @@
           />
           <textarea
             name="message"
+            id="message"
             minlength="5"
             maxlength="500"
             aria-label=" Comments"
             required
-          >
-Enter text here</textarea
-          >
-          <button type="submit">Get in touch</button>
+            placeholder="Enter text here"
+          ></textarea>
+          <button id="submit" type="submit">Get in touch</button>
+          <label id="error-message"></label>
         </form>
       </section>
       <footer class="footer">

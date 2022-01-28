@@ -124,13 +124,19 @@
               <li>bootsrap</li>
               <li>Ruby</li>
             </ul>
-            <button class="project-button" type="button">See Project</button>
+            <button
+              class="project-button"
+              data-modal="main-project"
+              type="button"
+            >
+              See Project
+            </button>
           </div>
         </div>
         <div class="cards-section">
           <div class="work-card">
-            <div class="card-content">
-              <h4>Professional Art Printing Data</h4>
+            <div class="card-content flex-container">
+              <h4>1st: Printing Data</h4>
               <p>
                 A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard
@@ -141,11 +147,11 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button">See Project</button>
+            <button class="card-button" type="button">See Project</button>
           </div>
           <div class="work-card">
-            <div class="card-content">
-              <h4>Professional Art Printing Data</h4>
+            <div class="card-content flex-container">
+              <h4>2nd: Printing Data</h4>
               <p>
                 A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard
@@ -156,11 +162,11 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button">See Project</button>
+            <button class="card-button" type="button">See Project</button>
           </div>
           <div class="work-card">
-            <div class="card-content">
-              <h4>Professional Art Printing Data</h4>
+            <div class="card-content flex-container">
+              <h4>3rd: Printing Data</h4>
               <p>
                 A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard
@@ -171,11 +177,11 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button">See Project</button>
+            <button class="card-button" type="button">See Project</button>
           </div>
           <div class="work-card">
-            <div class="card-content">
-              <h4>Professional Art Printing Data</h4>
+            <div class="card-content flex-container">
+              <h4>4th: Printing Data</h4>
               <p>
                 A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard
@@ -186,11 +192,11 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button">See Project</button>
+            <button class="card-button" type="button">See Project</button>
           </div>
           <div class="work-card">
-            <div class="card-content">
-              <h4>Professional Art Printing Data</h4>
+            <div class="card-content flex-container">
+              <h4>5th: Printing Data</h4>
               <p>
                 A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard
@@ -201,11 +207,11 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button">See Project</button>
+            <button class="card-button" type="button">See Project</button>
           </div>
-          <div class="work-card">
-            <div class="card-content">
-              <h4>Professional Art Printing Data</h4>
+          <div class="work-card flex-container">
+            <div class="card-content flex-container">
+              <h4>6th: Printing Data</h4>
               <p>
                 A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard
@@ -216,10 +222,11 @@
                 <li>Ruby</li>
               </ul>
             </div>
-            <button type="button">See Project</button>
+            <button class="card-button" type="button">See Project</button>
           </div>
         </div>
       </section>
+
       <section class="about-me" id="about-me">
         <div class="about-text">
           <h2>About me</h2>
@@ -268,7 +275,6 @@
           <br />
         </div>
       </section>
-
       <section class="contact-me" id="contact-me">
         <h6 id="text">
           I'm always interested in hearing about new projects, so if you'd like
@@ -303,7 +309,6 @@ Enter text here</textarea
           <button type="submit">Get in touch</button>
         </form>
       </section>
-
       <footer class="footer">
         <div class="social-icon">
           <ul>
@@ -334,6 +339,56 @@ Enter text here</textarea
           <div class="shape"></div>
         </div>
       </footer>
+      <section class="modal-section" id="main-project">
+        <div class="modal">
+          <h3>Multi Post Stories</h3>
+          <img src="image/x-icon.png" class="close-btn" alt="close button" />
+          <ul id="tech-used">
+            <li class="item">html</li>
+            <li class="item">Bootstrap</li>
+            <li class="item">Ruby on rails</li>
+          </ul>
+          <div class="modal-content">
+            <img
+              src="image/snapshot.jpg"
+              class="multi-image"
+              alt="Multi post stories image"
+            />
+            <div class="modal-details">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essent
+              </p>
+              <ul class="modal-btn">
+                <li>
+                  <button class="project-button" type="button">
+                    See Live
+                    <img
+                      class="modal-icon"
+                      src="image/Icon-see.svg"
+                      alt="watch live icon"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button class="project-button" type="button">
+                    See source
+                    <img
+                      class="modal-icon"
+                      src="image/github.png"
+                      alt="git hub icon"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="app.js"></script>
     <script

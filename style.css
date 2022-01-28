@@ -892,8 +892,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    /* order: 2; */
+    order: 2;
     padding: 190px 0;
     margin-left: 40px;
   }

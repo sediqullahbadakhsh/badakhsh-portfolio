@@ -280,10 +280,11 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h6>
-        <form action="https://formspree.io/f/moqrjalz" method="post">
+        <form id="form" action="https://formspree.io/f/moqrjalz" method="post">
           <input
             name="fullname"
             id="fullname"
+            class="stored"
             type="text"
             placeholder="Full name"
             minlength="5"
@@ -294,6 +295,7 @@
           <input
             name="email"
             id="email"
+            class="stored"
             type="email"
             placeholder="Email address"
             aria-label=" Email Address"
@@ -302,6 +304,7 @@
           <textarea
             name="message"
             id="message"
+            class="stored"
             minlength="5"
             maxlength="500"
             aria-label=" Comments"

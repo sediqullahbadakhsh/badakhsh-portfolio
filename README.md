@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# Hotel Reservation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the Front-end App for HotelAgent, an app in which you can reserve a hotel. 
 
-## Available Scripts
+- Sign up and sign in to access the app.
+- sign out from the current account
+- Add and Remove the hotel that you want to stay in.
+- Reserve how many rooms days you need.
+- Get cost information for the reservation process.
+- Cancel reservation.
+- see the list of your reservations
+- see the list of available hotels
+## App functions: :wink:
 
-In the project directory, you can run:
+With Hotel  Agent, you can do the following:
 
-### `npm start`
+- Authenticate users:
+  - Create an account by providing a valid name, e-mail, and password with its confirmation. You'll automatically be logged in.
+  - Login by providing your registered e-mail and password confirmation.
+  - You can logout from your current account
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Featured Page:
+  - On this page, you can get some details about hotels we provide on the site and this page is public even for users who didn't sign in.
+  - Once you log in, you'll be able to see a list of hotels to reserve.
+  - On click of these hotels, you can access their details You can then decide if you want to make a reservation in one of them by clicking the reserve button.
+  - On the reserve hotel page you can select a start date and number of days you are going to stay in the hotel and there is the country, number of guests will be in your company
+- Reservations:
+  - After creating a new reservation or by navigating from the navigation bar, you'll find yourself on the reservations page, where you can check the reservation details and delete them after confirmation.
+  
+## API Repo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Check the Api of this App [here](https://github.com/Alexr16/Hotel-agent-back-end).
 
-### `npm test`
+  
+## Built With: :mag:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML (Front-end) <img align="left" alt="HTML5" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" />
+- CSS (Front-end) <img align="left" alt="CSS3" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" />
+- JavaScript (Front-end) <img align="left" alt="JavaScript" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" />
+- Webpack (Front-end) <img align="left" alt="Webpack" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/webpack.svg" />
+- React (Front-end) <img align="left" alt="React" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" />
+- React-router (Front-end) <img align="left" alt="React-router" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/react-router.svg" />
+- Redux (Front-end) <img align="left" alt="Redux" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/redux.svg" />
+- Jest (Front-end) <img align="left" alt="Jest" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/jest.svg" />
 
-### `npm run build`
+- Ruby 3.1.2 (Back-end) <img align="left" alt="Ruby" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/ruby.svg" />
+- Ruby on Rails 7.0.3 (Back-end) <img align="left" alt="Rails" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/rails.svg" />
+- PostgreSQL (Back-end) <img align="left" alt="Postgresql" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/postgresql.svg" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Heroku <img align="left" alt="Heroku" width="26px" src="https://github.com/get-icon/geticon/raw/master/icons/heroku-icon.svg" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started: :chart_with_upwards_trend:
+To get a local copy up and running follow these simple example steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Click on the top right green "code" button.
 
-### `npm run eject`
+- On the dropdown menu, choose the "Download with zip" button.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- After download, extract the zip file and you have the project on your machine.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Run `npm i` to install all the project dependencies.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Run `npm start` to run the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Kanban Board: 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project was developed by a team of 5 people, you can check that out in our [authors section](#authors-).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [You can click here to redirect to our  **kanban board**](https://github.com/users/Alexr16/projects/3).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- This is a screenshot of our **kanban board** (UI) at the beginning of the project:
 
-### Analyzing the Bundle Size
+![Start_kanban_board](https://user-images.githubusercontent.com/95060298/183961648-724a294f-a3f0-40bb-a37a-c89e3bde5375.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> [You can check our  issues with that info by clicking here](https://github.com/Alexr16/Hotel-agent-back-end/issues?q=is%3Aissue+is%3Aclosed)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Authors: 👋
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+👤 **Ahmed Adel**
 
-### Deployment
+- GitHub: [Ahmed](https://github.com/ahmedadel56)
+- LinkedIn: [Ahmed Adel](https://www.linkedin.com/in/ahmed-adel56/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+👤 **Jorge Rios**
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub: [@Alexr16](https://github.com/Alexr16)
+- Twitter: [@ReveloJ](https://twitter.com/ReveloJ)
+- LinkedIn: [Jorge Ríos](https://www.linkedin.com/in/jorgeriosr/) 
+
+👤 **Sediqullah Badakhsh**
+
+- GitHub: [@sediqullahbadakhsh](https://github.com/sediqullahbadakhsh)
+- LinkedIn: [@sediqullah](https://www.linkedin.com/in/sediqullah/) 
+- Twitter: [@sediqullah6](https://twitter.com/sediqullah6) 
+
+## Contributing: 🤝
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support: 🌟
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments: 📝
+
+- Hat tip to anyone whose code was used
+
+- Thanks to [Murat Korkmaz](https://www.behance.net/muratk) for creating [this fantastic design](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) that this project was based on!
+
+## License: :monocle_face:
+
+This project is [MIT](./LICENSE) licensed.

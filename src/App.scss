@@ -1,0 +1,23 @@
+$green: #4dce71;
+$coffee: #37323e;
+$blush: #eee5e9;
+$blue: #b4d2e7;
+$fontBody: 'Roboto', sans-serif;
+$fontLogo: 'Dancing Script', cursive;
+$fontHead: 'Rubik Maze', cursive;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  background-color: $blush;
+  color: $coffee;
+
+  html {
+    scroll-behavior: smooth;
+  }
+}

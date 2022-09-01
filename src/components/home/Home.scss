@@ -1,0 +1,13 @@
+@import "../../App";
+
+h2 {
+  color: $green;
+}
+.home_container {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+
+  align-items: center;
+}

@@ -38,7 +38,7 @@ const Home = () => (
         need coded, don&apos;t hestiate to contact me.
       </p>
       <p>
-        <a href="#/">
+        <a href="#about">
           <FaArrowDown />
         </a>
       </p>

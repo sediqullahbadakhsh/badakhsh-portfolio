@@ -1,10 +1,10 @@
 $green: #4dce71;
 $coffee: #37323e;
-$blush: #d4d1d2;
-$blue: #b4d2e7;
-$fontBody: 'Roboto', sans-serif;
-$fontLogo: 'Dancing Script', cursive;
-$fontHead: 'Rubik Maze', cursive;
+$blush: #ececec93;
+$blue: #b4d2e7ce;
+$fontBody: "Roboto", sans-serif;
+$fontLogo: "Dancing Script", cursive;
+$fontHead: "Rubik Maze", cursive;
 
 * {
   margin: 0;
@@ -14,10 +14,10 @@ $fontHead: 'Rubik Maze', cursive;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  background-color: $blush;
   color: $coffee;
 }
 html {
   scroll-behavior: smooth;
   font-family: $fontBody;
+  background-color: $blush;
 }

@@ -12,22 +12,36 @@ import {
 const Home = () => (
   <div className="home_container">
     <div className="home_social">
-      <FaGithub />
-      <FaTwitterSquare />
-      <FaLinkedin />
-      <FaAngellist />
-      <FaDownload />
+      <a href="#/">
+        <FaGithub />
+      </a>
+      <a href="#/">
+        <FaTwitterSquare />
+      </a>
+      <a href="#/">
+        <FaLinkedin />
+      </a>
+      <a href="#/">
+        <FaAngellist />
+      </a>
+      <a href="#/">
+        <FaDownload />
+      </a>
     </div>
     <div className="home_intro">
-      <h2>Hi I am</h2>
+      <h2>HEY! I AM</h2>
       <h1>Sediqullah Badakhsh</h1>
-      <h2>I am a Full Stack Web Developer</h2>
+      <h2>I&apos;m a Full Stack Web Developer</h2>
       <p>
-        I can help you build a product , feature or website Look through some of
+        I can help you build a product, feature or website Look through some of
         my work and experience! If you like what you see and have a project you
         need coded, don&apos;t hestiate to contact me.
       </p>
-      <FaArrowDown />
+      <p>
+        <a href="#/">
+          <FaArrowDown />
+        </a>
+      </p>
     </div>
   </div>
 );

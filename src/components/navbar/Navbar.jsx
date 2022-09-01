@@ -14,15 +14,15 @@ const Navbar = () => (
       <AiOutlineHome />
       Home
     </a>
-    <a href="#/">
+    <a href="#about">
       <AiOutlineUser />
       About
     </a>
-    <a href="#/">
+    <a href="#resume">
       <AiOutlineBook />
       Resume
     </a>
-    <a href="#/">
+    <a href="#portfolio">
       <AiOutlineProject />
       Portfolio
     </a>

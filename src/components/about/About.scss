@@ -1,1 +1,19 @@
-@import '../../App.scss';
+@import "../../App.scss";
+
+.about-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  padding: 0 140px;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  img {
+    height: 100vh;
+  }
+  .about-content {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

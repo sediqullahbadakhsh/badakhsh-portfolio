@@ -5,7 +5,7 @@
   display: grid;
   padding: 60px 120px;
   justify-content: center;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   background-color: $blue;
   .resume-sections {
     display: flex;
@@ -16,4 +16,19 @@
       color: red;
     }
   }
+}
+.resume-header {
+  padding-bottom: 20px;
+  color: $green;
+  font-size: 2.5rem;
+}
+.resume-card {
+  background: #b4d2e7a9;
+  margin: 10px;
+  min-height: 150px;
+  border-radius: 20px;
+  padding: 15px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  box-shadow: 4px 4px #5353532f;
 }

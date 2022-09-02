@@ -17,18 +17,20 @@ const About = () => (
         testing, mentoring, and...
       </p>
       <table>
-        <tr>
-          <td className="table-title">Name:</td>
-          <td className="color-grey">Sediqullah Badakhsh</td>
-        </tr>
-        <tr>
-          <td className="table-title">Email:</td>
-          <td className="color-grey">sediqullah.badakhsh@gmail.com</td>
-        </tr>
-        <tr>
-          <td className="table-title">Country:</td>
-          <td className="color-grey">Afghanistan</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td className="table-title">Name:</td>
+            <td className="color-grey">Sediqullah Badakhsh</td>
+          </tr>
+          <tr>
+            <td className="table-title">Email:</td>
+            <td className="color-grey">sediqullah.badakhsh@gmail.com</td>
+          </tr>
+          <tr>
+            <td className="table-title">Country:</td>
+            <td className="color-grey">Afghanistan</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>

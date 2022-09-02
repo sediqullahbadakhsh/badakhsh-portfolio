@@ -15,5 +15,5 @@ Links.propTypes = {
   link: PropTypes.func,
 };
 Links.defaultProps = {
-  link: "education",
+  link: "experience",
 };

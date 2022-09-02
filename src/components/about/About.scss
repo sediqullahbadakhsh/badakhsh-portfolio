@@ -15,5 +15,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    td {
+      padding: 5px 0;
+    }
+  }
+  .color-grey {
+    color: grey;
   }
 }

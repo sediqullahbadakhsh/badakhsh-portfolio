@@ -3,9 +3,17 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  padding: 60px;
-  align-items: center;
+  padding: 60px 120px;
   justify-content: center;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr 4fr;
   background-color: $blue;
+  .resume-sections {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 15px;
+    .active {
+      color: red;
+    }
+  }
 }

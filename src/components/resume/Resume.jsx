@@ -10,16 +10,36 @@ const Resume = () => {
   return (
     <div className="resume-container" id="resume">
       <div className="resume-sections">
-        <a href="#/" id="education" onClick={handleClick}>
+        <a
+          href="#/education"
+          id="education"
+          className={link === "education" ? "active" : ""}
+          onClick={handleClick}
+        >
           Education
         </a>
-        <a href="#/" id="experience" onClick={handleClick}>
+        <a
+          href="#/experience"
+          id="experience"
+          onClick={handleClick}
+          className={link === "experience" ? "active" : ""}
+        >
           Experience
         </a>
-        <a href="#/" id="skills" onClick={handleClick}>
+        <a
+          href="#/skills"
+          id="skills"
+          onClick={handleClick}
+          className={link === "skills" ? "active" : ""}
+        >
           Skills
         </a>
-        <a href="#/" id="awards" onClick={handleClick}>
+        <a
+          href="#/awards"
+          id="awards"
+          onClick={handleClick}
+          className={link === "awards" ? "active" : ""}
+        >
           Awards
         </a>
       </div>

@@ -1,2 +1,2 @@
-const Education = () => <div>education</div>;
+const Education = () => <div>Education</div>;
 export default Education;

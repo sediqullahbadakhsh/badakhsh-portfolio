@@ -1,3 +1,4 @@
+import ScrollSpy from "react-ui-scrollspy";
 import "./App.scss";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
@@ -10,11 +11,13 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
-      <About />
-      <Resume />
-      <Portfolio />
-      <Contact />
+      <ScrollSpy useBoxMethod={false}>
+        <Home id="home" />
+        <About id="about" />
+        <Resume id="resume" />
+        <Portfolio id="portfolio" />
+        <Contact id="contact" />
+      </ScrollSpy>
     </div>
   );
 }

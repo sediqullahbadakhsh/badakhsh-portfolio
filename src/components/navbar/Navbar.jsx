@@ -10,23 +10,23 @@ import {
 
 const Navbar = () => (
   <nav>
-    <a href="#home">
+    <a href="#home" data-to-scrollspy-id="home">
       <AiOutlineHome />
       Home
     </a>
-    <a href="#about">
+    <a href="#about" data-to-scrollspy-id="about">
       <AiOutlineUser />
       About
     </a>
-    <a href="#resume">
+    <a href="#resume" data-to-scrollspy-id="resume">
       <AiOutlineBook />
       Resume
     </a>
-    <a href="#portfolio">
+    <a href="#portfolio" data-to-scrollspy-id="portfolio">
       <AiOutlineProject />
       Portfolio
     </a>
-    <a href="#contact">
+    <a href="#contact" data-to-scrollspy-id="contact">
       <AiOutlineContacts />
       Contact
     </a>

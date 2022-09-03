@@ -34,14 +34,6 @@ const Resume = () => {
         >
           Skills
         </a>
-        <a
-          href="#/awards"
-          id="awards"
-          onClick={handleClick}
-          className={link === "awards" ? "active" : ""}
-        >
-          Awards
-        </a>
       </div>
       <div className="resume-content">
         <Links link={link} />

@@ -10,7 +10,7 @@ const Links = ({ link }) => {
 };
 export default Links;
 Links.propTypes = {
-  link: PropTypes.func,
+  link: PropTypes.string,
 };
 Links.defaultProps = {
   link: "experience",

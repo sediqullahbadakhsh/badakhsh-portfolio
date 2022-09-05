@@ -1,0 +1,42 @@
+@import "../../App.scss";
+.portfolio-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 140px;
+
+  .portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .portfolio-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-around;
+    justify-items: center;
+
+    .portfolio-card {
+      padding: 5px;
+      background: $green;
+      border-radius: 5px;
+      .card-image {
+        width: 200px;
+      }
+      .card-title {
+        margin: 0 5px;
+      }
+      .card-techs {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        .techs {
+          margin: 5px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

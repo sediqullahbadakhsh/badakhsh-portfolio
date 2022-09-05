@@ -1,0 +1,41 @@
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 140px;
+  .contact-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    .contact-options {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 20px;
+      .contact-option {
+        border: solid 1px black;
+        border-radius: 5px;
+        width: 180px;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        word-wrap: break-word;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      input {
+        font-size: 1.2rem;
+      }
+      button {
+        width: 120px;
+        padding: 5px;
+        border: solid 1px black;
+        border-radius: 5px;
+      }
+    }
+  }
+}

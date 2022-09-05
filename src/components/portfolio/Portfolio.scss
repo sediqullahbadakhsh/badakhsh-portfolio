@@ -23,7 +23,7 @@
       background: $green;
       border-radius: 5px;
       .card-image {
-        width: 200px;
+        width: 250px;
       }
       .card-title {
         margin: 0 5px;
@@ -35,6 +35,20 @@
         .techs {
           margin: 5px;
           padding: 5px;
+          border: solid 1px black;
+          border-radius: 5px;
+          width: 50px;
+          text-align: center;
+        }
+      }
+      .card-link {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        a {
+          padding: 2px;
+          border: solid 1px black;
+          border-radius: 5px;
         }
       }
     }

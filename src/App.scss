@@ -22,8 +22,14 @@ html {
   background-color: $blush;
 }
 .active-scroll-spy {
-  background-color: yellowgreen;
-  border-radius: 15px;
+  background-color: white;
+  border: 2px solid $green;
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  padding-top: 1%;
+  word-wrap: break-word;
 }
 .color-grey {
   color: grey;

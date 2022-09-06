@@ -4,17 +4,23 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  padding: 60px;
+  padding: 100px;
   align-items: center;
   justify-content: center;
   grid-template-columns: 0.2fr 6fr;
-  background-color: $blue;
+  // background-color: $blue;
 
   .home_social {
     display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 1.5rem;
+
+    a {
+      svg:hover {
+        fill: $green;
+      }
+    }
   }
   .home_intro {
     display: flex;
@@ -37,5 +43,11 @@
         font-size: 3rem;
       }
     }
+  }
+  .arrow-down > svg {
+    margin-top: 40px;
+  }
+  .arrow-down > svg:hover {
+    fill: $green;
   }
 }

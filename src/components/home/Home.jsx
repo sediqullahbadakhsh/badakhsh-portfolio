@@ -12,19 +12,22 @@ import {
 const Home = () => (
   <div className="home_container" id="home">
     <div className="home_social">
-      <a href="#/">
+      <a href="https://github.com/sediqullahbadakhsh" target="blank">
         <FaGithub />
       </a>
-      <a href="#/">
+      <a href="https://twitter.com/sediqullah6" target="blank">
         <FaTwitterSquare />
       </a>
-      <a href="#/">
+      <a href="https://www.linkedin.com/in/sediqullah/" target="blank">
         <FaLinkedin />
       </a>
-      <a href="#/">
+      <a href="https://angel.co/u/sediqullah-badakhsh-1" target="blank">
         <FaAngellist />
       </a>
-      <a href="#/">
+      <a
+        href="https://docs.google.com/document/d/1uToMs4H9BfkTT9jVL1Of0LWZHKShzgLbIJipdNBryG0/edit?usp=sharing"
+        target="blank"
+      >
         <FaDownload />
       </a>
     </div>
@@ -34,7 +37,7 @@ const Home = () => (
       <h2>I&apos;m a Full Stack Web Developer</h2>
 
       <p>
-        <a href="#about">
+        <a href="#about" className="arrow-down">
           <FaArrowDown />
         </a>
       </p>

@@ -13,9 +13,13 @@ function App() {
       <Navbar />
       <ScrollSpy useBoxMethod={false}>
         <Home id="home" />
+        <hr />
         <About id="about" />
+        <hr />
         <Resume id="resume" />
+        <hr />
         <Portfolio id="portfolio" />
+        <hr />
         <Contact id="contact" />
       </ScrollSpy>
     </div>

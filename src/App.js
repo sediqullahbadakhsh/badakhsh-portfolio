@@ -2,6 +2,7 @@ import ScrollSpy from "react-ui-scrollspy";
 import "./App.scss";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/Footer";
 import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -18,6 +19,7 @@ function App() {
         <Portfolio id="portfolio" />
         <Contact id="contact" />
       </ScrollSpy>
+      <Footer />
     </div>
   );
 }

@@ -37,14 +37,9 @@ html {
 .color-green {
   color: $green;
 }
-hr {
-  margin: auto;
-  width: 50%;
-  border: 4px outset $green;
-  //   border-style: solid;
-  // border-style: double;
-  // border-style: groove;
-  // border-style: ridge;
-  // border-style: inset;
-  // border-style: outset;
+.footer {
+  border-top: 1px solid $green;
+  text-align: center;
+  margin: 15px 0;
+  padding-top: 5px;
 }

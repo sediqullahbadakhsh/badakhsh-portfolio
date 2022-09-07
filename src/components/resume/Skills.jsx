@@ -1,3 +1,4 @@
+import { AiFillCheckCircle } from "react-icons/ai";
 import { frontEnd, backEnd } from "./SkillList";
 
 const Skills = () => (
@@ -10,8 +11,11 @@ const Skills = () => (
         <div className="skills">
           {frontEnd.map((item) => (
             <div key={item.id} className="techs">
-              <p>{item.tech}</p>
-              <p>{item.skill}</p>
+              <AiFillCheckCircle />
+              <div>
+                <p className="skill">{item.tech}</p>
+                <p className="dificulty">{item.skill}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -21,8 +25,11 @@ const Skills = () => (
         <div className="skills">
           {backEnd.map((item) => (
             <div key={item.id} className="techs">
-              <p>{item.tech}</p>
-              <p>{item.skill}</p>
+              <AiFillCheckCircle />
+              <div>
+                <p className="skill">{item.tech}</p>
+                <p className="dificulty">{item.skill}</p>
+              </div>
             </div>
           ))}
         </div>

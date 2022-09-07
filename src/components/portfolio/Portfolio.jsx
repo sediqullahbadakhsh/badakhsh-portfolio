@@ -5,7 +5,7 @@ import list from "./projectList";
 const Portfolio = () => (
   <div className="portfolio-container" id="portfolio">
     <div className="portfolio-header">
-      <h2>Portfolio</h2>
+      <h2>Recent Projects</h2>
       <a href="#/">More Projects</a>
     </div>
     <div className="portfolio-content">

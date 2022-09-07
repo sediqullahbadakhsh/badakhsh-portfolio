@@ -4,12 +4,21 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 40px 100px;
+  padding: 0 100px;
 
   .portfolio-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    h2 {
+      color: $green;
+      font-size: 2rem;
+    }
+    a {
+      background-color: $green;
+      padding: 5px;
+      border-radius: 10px;
+    }
   }
   .portfolio-content {
     display: grid;
@@ -19,9 +28,12 @@
     justify-items: center;
 
     .portfolio-card {
-      padding: 5px;
-      background: $green;
-      border-radius: 5px;
+      padding: 10px;
+      background: #b4d2e7a9;
+      -webkit-backdrop-filter: blur(15px);
+      backdrop-filter: blur(10px);
+      box-shadow: 4px 4px #5353532f;
+      border-radius: 10px;
       .card-image {
         width: 250px;
       }
@@ -34,8 +46,8 @@
         gap: 20px;
         .techs {
           margin: 5px;
-          padding: 5px;
-          border: solid 1px black;
+          padding: 2px;
+          border-bottom: solid 1px black;
           border-radius: 5px;
           width: 50px;
           text-align: center;
@@ -47,10 +59,21 @@
         padding: 5px;
         a {
           padding: 2px;
-          border: solid 1px black;
           border-radius: 5px;
+          background: $green;
+          width: 70px;
+          text-align: center;
+          color: $coffee;
+        }
+        a:hover {
+          background-color: $sblue;
         }
       }
+    }
+    .portfolio-card:hover {
+      background: #b4d2e73d;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
     }
   }
 }

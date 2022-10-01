@@ -1,0 +1,53 @@
+@import "../../App";
+
+.home_container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  padding: 100px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 0.2fr 6fr;
+  // background-color: $blue;
+
+  .home_social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5rem;
+
+    a {
+      svg:hover {
+        fill: $green;
+      }
+    }
+  }
+  .home_intro {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    h2 {
+      color: $green;
+      font-size: 2rem;
+    }
+    h1 {
+      font-family: $fontHead;
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1.5rem;
+      a {
+        font-size: 3rem;
+      }
+    }
+  }
+  .arrow-down > svg {
+    margin-top: 40px;
+  }
+  .arrow-down > svg:hover {
+    fill: $green;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../App.scss";
+
+.about-container {
+  width: 100%;
+  display: grid;
+  padding: 30px 100px;
+  justify-content: center;
+  justify-items: end;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  img {
+    width: 70%;
+  }
+  .about-content {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h1 {
+      color: $green;
+      font-size: 2rem;
+    }
+    td {
+      padding: 5px 0;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import "../../App.scss";
+.contact-container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 100px;
+  h2 {
+    padding-bottom: 30px;
+    color: $green;
+    font-size: 2rem;
+  }
+  .contact-details {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    .contact-options {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .contact-option {
+        background: #b4d2e7a9;
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(10px);
+        box-shadow: 4px 4px #5353532f;
+        border-radius: 15px;
+        width: 180px;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        word-wrap: break-word;
+        h4 > svg {
+          fill: blue;
+          font-size: 2rem;
+        }
+        .title {
+          padding: 10px 0;
+        }
+
+        a {
+          background-color: $coffee;
+          color: $blush;
+          padding: 3px;
+          border-radius: 5px;
+        }
+        a:hover {
+          background-color: $green;
+          color: $coffee;
+        }
+      }
+      .contact-option:hover {
+        background: #b4d2e73d;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      input,
+      textarea {
+        font-size: 1rem;
+        width: 900px;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        background-color: $blue;
+      }
+      input {
+        height: 40px;
+      }
+
+      button {
+        width: 120px;
+        padding: 5px;
+        background-color: $green;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@import "../../App.scss";
+.resume-container {
+  width: 100%;
+  min-height: 70vh;
+  display: grid;
+  padding: 60px 100px;
+  justify-content: center;
+  grid-template-columns: 1fr 5fr;
+  .resume-sections {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 15px;
+    .active {
+      color: $green;
+      font-size: large;
+    }
+  }
+}
+.resume-header {
+  padding-bottom: 20px;
+  color: $green;
+  font-size: 2rem;
+}
+.resume-card {
+  margin: 10px;
+  min-height: 150px;
+  border-radius: 20px;
+  padding: 15px;
+  background: #b4d2e7a9;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 4px #5353532f;
+}
+.resume-card:hover {
+  background: #b4d2e73d;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.skills-content {
+  display: flex;
+  gap: 100px;
+  // justify-content: space-between;
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 4px #5353532f;
+    width: 35%;
+    background: #b4d2e7a9;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 20px;
+
+    .skills {
+      padding-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      justify-content: center;
+      .techs {
+        padding: 0 40px;
+        display: flex;
+        gap: 5px;
+        svg {
+          fill: $green;
+        }
+        .dificulty {
+          color: gray;
+        }
+      }
+    }
+  }
+  .skill-card:hover {
+    background: #b4d2e73d;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+}

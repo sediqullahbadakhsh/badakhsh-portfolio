@@ -20,6 +20,7 @@
     "import/no-unresolved": "off",
     "no-shadow": "off",
     "quotes": "off",
+    "linebreak-style": ["error", "windows"],
     "import/extensions": [
       "error",
       "ignorePackages",

@@ -2,52 +2,75 @@
 
 .home_container {
   width: 100%;
-  height: 100vh;
-  display: grid;
-  padding: 100px;
+  min-height: 100vh;
+  background-color: $black;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  grid-template-columns: 0.2fr 6fr;
-  // background-color: $blue;
-
+  justify-content: space-between;
+  padding: 20px;
+  .home_intro {
+    padding-left: 200px;
+    h2 {
+      color: $white;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    h1 {
+      color: $blue;
+      font-size: 2.8em;
+      font-weight: 700;
+      padding: 25px;
+      margin-left: 20px;
+    }
+    .explore {
+      position: absolute;
+      left: 45%;
+      bottom: 20%;
+      background-color: $whiteOpacity;
+      text-align: right;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3px 8px;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      span {
+        color: $gray;
+        font-weight: 700;
+      }
+      svg {
+        fill: $black;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .home_image {
+    width: auto;
+    overflow: hidden;
+    img {
+      max-width: 600px;
+      height: auto;
+    }
+  }
   .home_social {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    font-size: 1.5rem;
-
-    a {
-      svg:hover {
-        fill: $green;
+    gap: 10px;
+    position: absolute;
+    top: 38%;
+    right: 4%;
+    .social_icon {
+      border-radius: 35px;
+      width: 35px;
+      height: 35px;
+      background-color: $whiteOpacity;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 25px;
       }
     }
-  }
-  .home_intro {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    gap: 30px;
-    h2 {
-      color: $green;
-      font-size: 2rem;
-    }
-    h1 {
-      font-family: $fontHead;
-      font-size: 4rem;
-    }
-    p {
-      font-size: 1.5rem;
-      a {
-        font-size: 3rem;
-      }
-    }
-  }
-  .arrow-down > svg {
-    margin-top: 40px;
-  }
-  .arrow-down > svg:hover {
-    fill: $green;
   }
 }

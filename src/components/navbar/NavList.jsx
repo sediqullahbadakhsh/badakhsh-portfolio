@@ -2,16 +2,18 @@ import React, { useState } from "react";
 /* eslint-disable*/
 const NavList = ({ url, content }) => {
   const [isActive, setIsActive] = useState(false);
+
   return (
     <div>
-      <a href={`#${content}`}>
+      <a href={`#${content}`} className="nav_links">
         <div
-          onMouseEnter={() => setIsActive(!isActive)}
+          onMouseEnter={() => setIsActive(true)}
           onMouseLeave={() => setIsActive(false)}
+          className="shadow_effect nav_icon"
         >
-          <img src={url} alt={content} className="shadow_effect nav_icon" />
+          <img src={url} alt={content} />
         </div>
-        <p onMouseLeave={() => setIsActive(false)}>{isActive && content}</p>
+        <p>{isActive && <p className="nav_link shadow_effect">{content}</p>}</p>
       </a>
     </div>
   );

@@ -1,20 +1,70 @@
 @import "../../App";
 
+// nav {
+//   display: block;
+//   background: #4dce7265;
+//   width: max-content;
+//   height: 40px;
+//   padding: 10px;
+//   position: fixed;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   bottom: 2rem;
+//   z-index: 2;
+//   display: flex;
+//   gap: 1rem;
+//   border-radius: 3rem;
+//   backdrop-filter: blur(15px);
+//   justify-content: center;
+//   align-items: center;
+// }
+// .hidden {
+//   display: none;
+// }
+// .visibile {
+//   display: inline;
+// }
 nav {
-  display: block;
-  background: #4dce7265;
-  width: max-content;
-  height: 40px;
-  padding: 10px;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 2rem;
-  z-index: 2;
+  width: 180px;
   display: flex;
-  gap: 1rem;
-  border-radius: 3rem;
-  backdrop-filter: blur(15px);
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  left: 150px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .nav_links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .nav_icon,
+    .nav_link {
+      background-color: $whiteOpacity;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+    }
+    .nav_link {
+      width: 100px;
+      color: $gray;
+      font-weight: 700;
+      text-align: left !important;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 50px;
+      border-top-right-radius: 50px;
+      height: 40px;
+    }
+    .nav_icon {
+      width: 50px;
+      border-radius: 50px;
+      height: 50px;
+      img {
+        width: 35px;
+      }
+    }
+  }
 }

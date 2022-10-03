@@ -3,7 +3,7 @@ import "./Portfolio.scss";
 import list from "./projectList";
 
 const Portfolio = () => (
-  <div className="portfolio-container" id="portfolio">
+  <div className="portfolio-container" id="Projects">
     <div className="portfolio-header">
       <h2>Recent Projects</h2>
       <a href="#/">More Projects</a>

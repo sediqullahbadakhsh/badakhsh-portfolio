@@ -4,7 +4,7 @@ import { AiTwotoneMail } from "react-icons/ai";
 import "./Contact.scss";
 
 const Contact = () => (
-  <div className="contact-container" id="contact">
+  <div className="contact-container" id="Contact">
     <h2>Contact Me</h2>
     <div className="contact-details">
       <div className="contact-options">

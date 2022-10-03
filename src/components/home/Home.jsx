@@ -6,7 +6,7 @@ import homebg from "../../assets/bgImage/hombg.jpg";
 import Socials from "./Socials";
 
 const Home = () => (
-  <div className="home_container" id="home">
+  <div className="home_container" id="Home">
     <div className="home_intro">
       <h2>HEY! I AM</h2>
       <h1>SEDIQULLAH BADAKHSH</h1>

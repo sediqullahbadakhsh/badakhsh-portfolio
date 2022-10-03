@@ -8,7 +8,7 @@ const Resume = () => {
     setLink(e.target.id);
   };
   return (
-    <div className="resume-container" id="resume">
+    <div className="resume-container" id="Resume">
       <div className="resume-sections">
         <a
           href="#/experience"

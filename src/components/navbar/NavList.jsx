@@ -4,13 +4,15 @@ const NavList = ({ url, content }) => {
   const [isActive, setIsActive] = useState(false);
   return (
     <div>
-      <div
-        onMouseEnter={() => setIsActive(!isActive)}
-        onMouseLeave={() => setIsActive(false)}
-      >
-        <img src={url} alt={content} className="shadow_effect nav_icon" />
-      </div>
-      <p onMouseLeave={() => setIsActive(false)}>{isActive && content}</p>
+      <a href={`#${content}`}>
+        <div
+          onMouseEnter={() => setIsActive(!isActive)}
+          onMouseLeave={() => setIsActive(false)}
+        >
+          <img src={url} alt={content} className="shadow_effect nav_icon" />
+        </div>
+        <p onMouseLeave={() => setIsActive(false)}>{isActive && content}</p>
+      </a>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import "./About.scss";
 import sediq from "../../assets/sediq-image.jpg";
 
 const About = () => (
-  <div className="about-container" id="about">
+  <div className="about-container" id="About">
     <div className="about-image">
       <img src={sediq} alt="sediq" />
     </div>

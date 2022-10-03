@@ -9,6 +9,7 @@ nav {
   left: 150px;
   top: 50%;
   transform: translate(-50%, -50%);
+  z-index: 999;
   .nav_links {
     display: flex;
     gap: 10px;

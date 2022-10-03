@@ -1,19 +1,19 @@
 @import "../../App.scss";
 .resume-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/bgImage/resumebg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  min-height: 70vh;
-  display: grid;
-  padding: 60px 100px;
-  justify-content: center;
-  grid-template-columns: 1fr 5fr;
-  .resume-sections {
+  height: 100vh;
+  padding: 80px 8%;
+  .resume_header {
     display: flex;
-    flex-direction: column;
-    align-self: center;
-    gap: 15px;
-    .active {
-      color: $green;
-      font-size: large;
+    justify-content: space-between;
+    .resume-sections {
+      display: flex;
+      gap: 20px;
     }
   }
 }

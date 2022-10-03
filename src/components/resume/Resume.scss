@@ -65,3 +65,25 @@
     }
   }
 }
+.skill-card {
+  padding: 30px 0 !important;
+  display: flex;
+  align-items: center;
+}
+.vertical {
+  transform: rotate(-90deg);
+  font-size: 1.7rem !important;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .skill {
+    margin-left: -25px;
+    display: flex;
+    gap: 15px;
+    svg {
+      fill: $blue;
+    }
+  }
+}

@@ -1,27 +1,40 @@
 @import "../../App.scss";
 
 .about-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/bgImage/aboutbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
-  display: grid;
-  padding: 30px 100px;
-  justify-content: center;
-  justify-items: end;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  img {
-    width: 70%;
-  }
+  padding: 80px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .about-content {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    h1 {
-      color: $green;
-      font-size: 2rem;
-    }
-    td {
-      padding: 5px 0;
+    align-self: flex-start;
+    width: 60%;
+    h1,
+    p {
+      padding: 10px 0;
+      line-height: 30px;
     }
   }
+}
+
+#container_2 {
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  border: 4px solid $blue;
+}
+#image {
+  object-fit: cover;
+  display: block;
+  width: 400px;
+  height: auto;
+  -webkit-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
 }

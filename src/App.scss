@@ -32,3 +32,8 @@ html {
 .shadow_effect:hover {
   box-shadow: $blue 0 0 8px 3px;
 }
+.heading {
+  color: $blue;
+  font-weight: 700;
+  font-size: 2rem;
+}

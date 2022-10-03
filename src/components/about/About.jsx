@@ -1,37 +1,27 @@
 import React from "react";
 import "./About.scss";
-import sediq from "../../assets/sediq-image.jpg";
+import sediq from "../../assets/sediq2.jpg";
 
 const About = () => (
   <div className="about-container" id="About">
-    <div className="about-image">
-      <img src={sediq} alt="sediq" />
-    </div>
     <div className="about-content">
-      <h1>About Me</h1>
-      <p className="color-grey">
-        I am full stack web developer studied Microverse full-stack web
-        development program remotly, while learning how to code, developed 10s
-        of projects using HTML, CSS, JavaScrip, React, Redux, Ruby on Rails, and
-        PostGreSql, collaborating, pair programming, providing code reviews,
-        testing, mentoring, and...
+      <h1 className="heading">About Me</h1>
+      <p>
+        I am a Full Stack Web Developer with experience in Ruby and JavaScript
+        Libraries and Frameworks. Excellent problem-solving skills and ability
+        to perform well in a team. Looking for opportunities that allow me to
+        continue learning and developing as a Full Stack Web Developer.
       </p>
-      <table>
-        <tbody>
-          <tr>
-            <td className="table-title">Name:</td>
-            <td className="color-grey">Sediqullah Badakhsh</td>
-          </tr>
-          <tr>
-            <td className="table-title">Email:</td>
-            <td className="color-grey">sediqullah.badakhsh@gmail.com</td>
-          </tr>
-          <tr>
-            <td className="table-title">Country:</td>
-            <td className="color-grey">Afghanistan</td>
-          </tr>
-        </tbody>
-      </table>
+      <p>
+        Want to know me better, Email me:
+        <br />
+        sediqullah.badakhsh@gmail.com
+      </p>
+    </div>
+    <div className="about-image" id="container_1">
+      <div id="container_2">
+        <img src={sediq} alt="sediq" id="image" />
+      </div>
     </div>
   </div>
 );

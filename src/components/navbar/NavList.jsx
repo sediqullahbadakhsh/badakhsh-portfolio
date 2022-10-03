@@ -13,7 +13,9 @@ const NavList = ({ url, content }) => {
         >
           <img src={url} alt={content} />
         </div>
-        <p>{isActive && <p className="nav_link shadow_effect">{content}</p>}</p>
+        <div>
+          {isActive && <p className="nav_link shadow_effect">{content}</p>}
+        </div>
       </a>
     </div>
   );

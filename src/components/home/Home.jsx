@@ -11,7 +11,7 @@ const Home = () => (
       <h2>HEY! I AM</h2>
       <h1>SEDIQULLAH BADAKHSH</h1>
       <h2>I&apos;m a Full Stack Web Developer</h2>
-      <a href="#about" className="shadow_effect explore">
+      <a href="#About" className="shadow_effect explore">
         <span>Explore </span>
         <FaPlay />
       </a>

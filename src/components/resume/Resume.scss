@@ -17,65 +17,51 @@
     }
   }
 }
-.resume-header {
-  padding-bottom: 20px;
-  color: $green;
-  font-size: 2rem;
-}
-.resume-card {
-  margin: 10px;
-  min-height: 150px;
-  border-radius: 20px;
-  padding: 15px;
-  background: #b4d2e7a9;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(10px);
-  box-shadow: 4px 4px #5353532f;
-}
-.resume-card:hover {
-  background: #b4d2e73d;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-}
-.skills-content {
+.resume-content {
+  padding-top: 10px;
   display: flex;
-  gap: 100px;
-  // justify-content: space-between;
-  .skill-card {
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    padding-bottom: 30px;
+  }
+  .cards-container {
+    width: calc(100vw - 200px);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(10px);
-    box-shadow: 4px 4px #5353532f;
-    width: 35%;
-    background: #b4d2e7a9;
-    border-radius: 20px;
-    padding: 15px;
-    margin-top: 20px;
-
-    .skills {
-      padding-top: 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      justify-content: center;
-      .techs {
-        padding: 0 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    .resume-card {
+      background-color: $grayOpacity;
+      width: 320px;
+      padding: 10px;
+      border-radius: 10px;
+      .card-image {
         display: flex;
-        gap: 5px;
-        svg {
-          fill: $green;
-        }
-        .dificulty {
-          color: gray;
+        align-items: center;
+        justify-content: center;
+        img {
+          padding-bottom: 10px;
+          height: 200px;
         }
       }
+      h3 {
+        font-size: 1rem;
+        padding: 3px 0;
+        color: $blue;
+      }
+      .date,
+      .uniName {
+        font-size: 0.8rem;
+        padding: 3px 0;
+        font-weight: 100;
+      }
+      .description {
+        font-weight: 400;
+        font-size: 0.9;
+      }
     }
-  }
-  .skill-card:hover {
-    background: #b4d2e73d;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    .resume-card:hover {
+      box-shadow: $blue 0 0 8px 3px;
+    }
   }
 }

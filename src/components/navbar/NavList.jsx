@@ -4,8 +4,8 @@ const NavList = ({ url, content }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div>
-      <a href={`#${content}`} className="nav_links">
+    <div className="nav_links">
+      <a href={`#${content}`}>
         <div
           onMouseEnter={() => setIsActive(true)}
           onMouseLeave={() => setIsActive(false)}
@@ -13,10 +13,10 @@ const NavList = ({ url, content }) => {
         >
           <img src={url} alt={content} />
         </div>
-        <div>
-          {isActive && <p className="nav_link shadow_effect">{content}</p>}
-        </div>
       </a>
+      <div>
+        {isActive && <p className="nav_link shadow_effect">{content}</p>}
+      </div>
     </div>
   );
 };

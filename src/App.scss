@@ -6,15 +6,6 @@ $black: #000;
 $grayOpacity: #4a4a4ae6;
 $font: "Inter", sans-serif;
 
-$green: #4dce71;
-$coffee: #37323e;
-$blush: #ececec93;
-
-$sblue: rgba(180, 210, 231, 0.349) b;
-$fontBody: "Roboto", sans-serif;
-$fontLogo: "Dancing Script", cursive;
-$fontHead: "Rubik Maze", cursive;
-
 * {
   margin: 0;
   padding: 0;
@@ -47,4 +38,13 @@ html {
 .hidden {
   display: none;
   visibility: hidden;
+}
+.footer {
+  border-top: 1px solid $blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+  width: 100%;
+  height: 60px;
 }

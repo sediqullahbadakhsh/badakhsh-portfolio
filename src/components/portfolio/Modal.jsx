@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { useState } from "react";
+import close from "../../assets/icons/close.svg";
 
 const Modal = ({
   hundleClick,
@@ -18,16 +19,34 @@ const Modal = ({
 
   return (
     <div className="modal">
-      <div>modal</div>
-      <p>{image}</p>
-      <p>{title}</p>
-      <p>{github}</p>
-      <p>{tech && tech.map((t) => <p>{t}</p>)}</p>
-      <p>{live}</p>
-      <p>{date}</p>
-      <p>{description}</p>
-
-      <button onClick={onClick}>Close</button>
+      <div className="modal-container">
+        <button onClick={onClick}>
+          <img src={close} alt="close" />
+        </button>
+        <div className="header">
+          <h2 className="heading">{title}</h2>
+          <p>{date}</p>
+        </div>
+        <div className="details">
+          <img src={image} alt={title} />
+          <div className="desc">
+            <p>
+              <span className="bold">Description:</span> <br />
+              {description}
+            </p>
+            <p className="bold">Built with:</p>
+            <div className="techs">{tech && tech.map((t) => <p>*{t}</p>)}</div>
+            <div className="links">
+              <a href={github} target="blank" className="shadow_effect link">
+                GitHub
+              </a>
+              <a href={live} target="blank" className="shadow_effect link">
+                View Live
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

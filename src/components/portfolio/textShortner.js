@@ -1,7 +1,7 @@
 const textShortner = (text) => {
   let shortText = "";
   const dots = " ...";
-  for (let i = 0; i < 60; i += 1) {
+  for (let i = 0; i < 70; i += 1) {
     shortText += text[i];
   }
   shortText += dots;

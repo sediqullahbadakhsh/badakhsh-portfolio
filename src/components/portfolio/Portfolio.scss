@@ -61,6 +61,7 @@
       h3,
       p {
         align-self: flex-start;
+        font-weight: 100;
       }
       .pr-card-btn {
         background-color: #9c9d9d;
@@ -93,4 +94,5 @@
   left: 0;
   width: 100vw;
   height: 100vw;
+  z-index: 999999;
 }

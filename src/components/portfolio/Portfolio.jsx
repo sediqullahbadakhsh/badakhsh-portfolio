@@ -6,7 +6,11 @@ import textShortner from "./textShortner";
 
 const Portfolio = () => {
   const [active, setActive] = useState(false);
-  const hundleClick = () => setActive(!active);
+  const [data, setData] = useState(null);
+  const hundleClick = (item) => {
+    setActive(!active);
+    setData(item);
+  };
 
   return (
     <div className="portfolio-container" id="Projects">
@@ -24,12 +28,21 @@ const Portfolio = () => {
             <p>{item.date}</p>
             <p>{textShortner(item.description)}</p>
             <div className="pr-card-btn">
-              <a href="#/" onClick={hundleClick}>
+              <a href="#/" onClick={() => hundleClick(item)}>
                 View Details
               </a>
             </div>
             <div className={active === true ? "active" : "hidden"}>
-              <Modal hundleClick={hundleClick} date={item.date} />
+              <Modal
+                hundleClick={hundleClick}
+                image={data && data.image}
+                title={data && data.title}
+                github={data && data.github}
+                live={data && data.live}
+                tech={data && data.tech}
+                date={data && data.date}
+                description={data && data.description}
+              />
             </div>
           </div>
         ))}

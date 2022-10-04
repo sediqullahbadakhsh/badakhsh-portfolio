@@ -1,79 +1,96 @@
 @import "../../App.scss";
 .portfolio-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/bgImage/projectsbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  min-height: 100vh;
+
+  padding: 100px 8%;
   display: flex;
   flex-direction: column;
-  padding: 0 100px;
-
+  align-items: center;
   .portfolio-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
-    h2 {
-      color: $green;
-      font-size: 2rem;
-    }
-    a {
-      background-color: $green;
-      padding: 5px;
-      border-radius: 10px;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+    .view_more_btn {
+      background-color: $whiteOpacity;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3px 8px;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      color: $gray;
+      font-weight: 700;
     }
   }
   .portfolio-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    width: calc(100vw - 200px);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    justify-items: center;
+    align-content: center;
 
     .portfolio-card {
+      background-color: $grayOpacity;
+      width: 320px;
       padding: 10px;
-      background: #b4d2e7a9;
-      -webkit-backdrop-filter: blur(15px);
-      backdrop-filter: blur(10px);
-      box-shadow: 4px 4px #5353532f;
       border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
       .card-image {
-        width: 250px;
-      }
-      .card-title {
-        margin: 0 5px;
-      }
-      .card-techs {
         display: flex;
-        justify-content: flex-start;
-        gap: 10px;
-        .techs {
-          margin: 5px;
-          padding: 2px;
-          border-bottom: solid 1px black;
-          border-radius: 5px;
-          width: 50px;
-          text-align: center;
-        }
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+
+        height: 150px;
       }
-      .card-link {
+      h3 {
+        font-size: 1rem;
+        padding: 3px 0;
+        color: $blue;
+      }
+      h3,
+      p {
+        align-self: flex-start;
+      }
+      .pr-card-btn {
+        background-color: #9c9d9d;
+        height: 40px;
+        width: 320px;
+        margin-bottom: -10px;
         display: flex;
-        justify-content: space-between;
-        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         a {
-          padding: 2px;
-          border-radius: 5px;
-          background: $green;
-          width: 70px;
-          text-align: center;
-          color: $coffee;
-        }
-        a:hover {
-          background-color: $sblue;
+          color: $gray;
         }
       }
-    }
-    .portfolio-card:hover {
-      background: #b4d2e73d;
-      -webkit-backdrop-filter: blur(5px);
-      backdrop-filter: blur(5px);
+      .pr-card-btn:hover {
+        background-color: $blue;
+        a {
+          color: $white;
+        }
+      }
     }
   }
+}
+.modal {
+  position: fixed;
+  background-color: $black;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
 }

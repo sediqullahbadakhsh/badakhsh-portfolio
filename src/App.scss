@@ -41,3 +41,10 @@ html {
 .active {
   color: $blue;
 }
+.active {
+  display: inline;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}

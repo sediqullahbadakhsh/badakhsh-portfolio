@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-- [Badakhsh-Portfolio](https://badakhsh-portfolio.netlify.app//).
+- [Badakhsh-Portfolio](https://sediqullahbadakhsh.github.io/badakhsh-portfolio/).
 
 ## Figma Design
 

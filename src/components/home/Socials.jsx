@@ -41,7 +41,7 @@ const Socials = () => {
         <img src={images["angel.png"]} alt="github" />
       </a>
       <a
-        href="https://docs.google.com/document/d/1uToMs4H9BfkTT9jVL1Of0LWZHKShzgLbIJipdNBryG0/edit?usp=sharing"
+        href="https://docs.google.com/document/d/1fFdSrpLABZzU1a68k8jQBWDBwIvab8jv/edit?usp=sharing&ouid=117090713036039485689&rtpof=true&sd=true"
         target="blank"
         className="shadow_effect social_icon"
       >

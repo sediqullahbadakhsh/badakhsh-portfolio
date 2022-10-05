@@ -2,7 +2,7 @@
   "name": "badakhsh-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sediqullahbadakhsh.github.io",
+  "homepage": "https://sediqullahbadakhsh.github.io/badakhsh-portfolio/",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.5",

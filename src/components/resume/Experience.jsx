@@ -15,11 +15,11 @@ const Experience = () => {
     },
     {
       id: 2,
-      year: "Sep, 2018 – Dec, 2022",
+      year: "Sep, 2018 – Dec, 2021",
       organization: "@IDLG-DMM, Kabul, Afghanistan",
       title: "Integrated Financial Management System Specialist",
       description:
-        "Performed System based assessments, Requirement Gathering, Monitoring, Testing end result of the system and deploying accrose multiple municipalites.",
+        "Performed System based assessments, Requirement Gathering, Monitoring, the Testing end result of the system, and deploying across multiple municipalities.",
       url: idlg,
     },
     {
